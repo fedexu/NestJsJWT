@@ -1,8 +1,9 @@
 {
-  "name": "nest-login-server",
+  "name": "nest-js-microservices-blank",
   "version": "0.0.1",
   "description": "",
-  "author": "",
+  "git": "https://github.com/fedexu/NestJsMicroservicesBlank.git",
+  "author": "Federico Peruzzi",
   "license": "MIT",
   "scripts": {
     "prebuild": "rimraf dist",
