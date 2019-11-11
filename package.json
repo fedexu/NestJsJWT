@@ -1,10 +1,10 @@
 {
-  "name": "nest-js-microservices-blank",
+  "name": "nest-js-jwt",
   "version": "0.0.1",
   "description": "",
-  "git": "https://github.com/fedexu/NestJsMicroservicesBlank.git",
+  "git": "https://github.com/fedexu/NestJsJWT.git",
   "author": "Federico Peruzzi",
-  "license": "MIT",
+  "license": "GNU3.0",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
