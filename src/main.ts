@@ -1,8 +1,8 @@
 import { NestFactory } from '@nestjs/core';
-import { AppModule } from './app.module';
+import { JwtAuthenticationModule } from './jwt-authentication.module';
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule, { cors: true });
-  await app.listen(3000);
+  const app = await NestFactory.create(JwtAuthenticationModule);
+  await app.listen(4000);
 }
 bootstrap();
