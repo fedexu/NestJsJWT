@@ -9,17 +9,6 @@ export class AppController {
     private authService: AuthService) {
     }
 
-  @Get('hello')
-  getHello(): string {
-    return 'Hello World!';
-  }
-
-  @UseGuards(JwtAuthGuard)
-  @Get()
-  getHelloRoot(): Object {
-    return {test:'Hello Root World!'};
-  }
-
   @UseGuards(LocalAuthGuard)
   @Post('token')
   async login(@Request() req) {
@@ -27,14 +16,9 @@ export class AppController {
   }
 
   @UseGuards(JwtAuthGuard)
-  @Get('profile')
+  @Get('autenticate')
   getProfile(@Request() req) {
     return req.user;
-  }
-
-  @Get('keys')
-  getkeys(): Object {
-    return JSON.parse(process.env.KEYS);
   }
 
 }
