@@ -24,5 +24,8 @@ $ npm run start:dev
 
 # production mode
 $ npm run start:prod
-```
 
+# docker mode
+docker run -p <your-port>:4000 --env-file .env fedexu/nest-js-jwt
+
+```
